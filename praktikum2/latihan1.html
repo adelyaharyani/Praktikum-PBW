@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Contoh Lengkap</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea, select {
+      width: 300px;
+      padding: 5px;
+      margin-top: 5px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    button {
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Form Contoh Lengkap</h2>
+
+  <form id="myForm">
+    
+    <!-- Input Text -->
+    <div class="form-group">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-group">
+      <label for="alamat">Alamat:</label>
+      <textarea id="alamat" name="alamat" rows="4" required></textarea>
+    </div>
+
+    <!-- Dropdown -->
+    <div class="form-group">
+      <label for="kota">Pilih Kota:</label>
+      <select id="kota" name="kota" required>
+        <option value="">-- Pilih Kota --</option>
+        <option value="Jakarta">Jakarta</option>
+        <option value="Bandung">Bandung</option>
+        <option value="Surabaya">Surabaya</option>
+      </select>
+    </div>
+
+    <!-- Radio Button -->
+    <div class="form-group">
+      <label>Jenis Kelamin:</label>
+      <input type="radio" id="pria" name="gender" value="Pria" required>
+      <label for="pria">Pria</label>
+      <input type="radio" id="wanita" name="gender" value="Wanita">
+      <label for="wanita">Wanita</label>
+    </div>
+
+    <!-- Checkbox -->
+    <div class="form-group">
+      <label>Hobi:</label>
+      <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+      <label for="membaca">Membaca</label>
+      <input type="checkbox" id="menulis" name="hobi" value="Menulis">
+      <label for="menulis">Menulis</label>
+      <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+      <label for="olahraga">Olahraga</label>
+    </div>
+
+    <!-- File Upload -->
+    <div class="form-group">
+      <label for="file">Upload Foto:</label>
+      <input type="file" id="file" name="file" accept="image/*" required>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+      <button type="submit">Kirim</button>
+      <button type="reset">Reset</button>
+    </div>
+
+  </form>
+
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      // Contoh validasi tambahan dengan JS
+      const nama = document.getElementById("nama").value;
+      if (nama.length < 3) {
+        alert("Nama minimal 3 karakter.");
+        event.preventDefault(); // Mencegah form submit
+      }
+    });
+  </script>
+
+</body>
+</html>
