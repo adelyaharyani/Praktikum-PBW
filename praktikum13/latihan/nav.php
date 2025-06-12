@@ -22,6 +22,10 @@
                    <li class="nav-item">
                        <a class="nav-link" href="hapus.php">Hapus Buku</a>
                    </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="pelanggan.php">Pelanggan</a>
+                   </li>
+
                </ul>
            </div>
        </div>
