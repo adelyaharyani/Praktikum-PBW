@@ -12,6 +12,13 @@
    <div class="container mt-4">
        <h2>Daftar Buku</h2>
 
+       <?php
+       session_start();
+       if (!isset($_SESSION['login_Un51k4'])) {
+            header("Location: login.php?message=" . urlencode("Mengakses fitur harus login dulu bro."));
+           exit;
+       }
+   ?>
 
        <!-- Form Pencarian -->
        <form method="get" class="row g-3 mb-4">

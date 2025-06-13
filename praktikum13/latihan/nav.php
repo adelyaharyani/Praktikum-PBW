@@ -6,7 +6,7 @@
                <span class="navbar-toggler-icon"></span>
            </button>
            <div class="collapse navbar-collapse" id="navbarNav">
-               <ul class="navbar-nav ms-auto">
+               <ul class="navbar-nav ms-auto"> 
                    <li class="nav-item">
                        <a class="nav-link" href="index.php">Daftar Buku</a>
                    </li>
@@ -20,12 +20,11 @@
                        <a class="nav-link" href="lihat_transaksi.php">Lihat Pesanan</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="hapus.php">Hapus Buku</a>
-                   </li>
-                   <li class="nav-item">
                     <a class="nav-link" href="pelanggan.php">Pelanggan</a>
                    </li>
-
+                   <li class="nav-item">
+                    <a class="nav-link" href="logout.php" class="btn btn-danger ms-auto">Logout</a>
+                   </li>
                </ul>
            </div>
        </div>
